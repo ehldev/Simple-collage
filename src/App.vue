@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Welcome @changeSection="changeSection($event)" v-if="sectionName === 'welcome'" />
+
+    <Layouts @changeSection="changeSection($event)" @selected="selectedLayout = $event" v-if="sectionName === 'layouts'" />
+
+    <Generate :selectedLayout="selectedLayout" @changeSection="changeSection($event)" v-if="sectionName === 'generate-collage'" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Welcome from './components/Welcome.vue'
+import Layouts from './components/Layouts.vue'
+import Generate from './components/Generate.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      sectionName: 'welcome',
+      selectedLayout: null
+    }
+  },
   components: {
-    HelloWorld
+    Welcome,
+    Layouts,
+    Generate
+  },
+  methods: {
+    changeSection(value) {
+      this.sectionName = value
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

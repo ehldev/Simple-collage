@@ -1,0 +1,53 @@
+@import "./variables.scss";
+@import "./components/card_layout.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	color: $dark;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.button {
+	color: rgba($dark, .9);
+	padding: .8rem 1.5rem;
+	display: inline-block;
+	border: 1px solid $light;
+	cursor: pointer;
+	outline: none;
+
+	transition: background-color .3s;
+
+	&:hover {
+		color: $dark;
+	}
+
+	&--green {
+		background-color: rgba($green, .9);
+		color: rgba(white, .9);
+
+		transition: color .3s;
+
+		&:hover {
+			background-color: $green;
+			color: white;
+		}
+	}
+}
+
+.text-right {
+	text-align: right;
+}
+
+.small-text {
+	font-size: .7em;
+}
