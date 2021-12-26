@@ -5,6 +5,8 @@
     <Layouts @changeSection="changeSection($event)" @selected="selectedLayout = $event" v-if="sectionName === 'layouts'" />
 
     <Generate :selectedLayout="selectedLayout" @changeSection="changeSection($event)" v-if="sectionName === 'generate-collage'" />
+
+    <BackButton :sectionName="sectionName" @change="changeSection($event)" v-if="sectionName != 'welcome'" />
   </div>
 </template>
 
@@ -12,6 +14,7 @@
 import Welcome from './components/Welcome.vue'
 import Layouts from './components/Layouts.vue'
 import Generate from './components/Generate.vue'
+import BackButton from './components/BackButton.vue'
 
 export default {
   name: 'App',
@@ -24,7 +27,8 @@ export default {
   components: {
     Welcome,
     Layouts,
-    Generate
+    Generate,
+    BackButton
   },
   methods: {
     changeSection(value) {
@@ -35,4 +39,7 @@ export default {
 </script>
 
 <style lang="scss">
+#app {
+  position: relative;
+}
 </style>
