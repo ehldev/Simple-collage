@@ -37,7 +37,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	position: absolute;
-	top: 1.2rem;
+	top: 1.3rem;
 	left: 3rem;
 	outline: none;
 	transition: box-shadow, transform .5s;
