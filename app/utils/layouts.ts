@@ -95,7 +95,7 @@ export function getLayout(id: string | undefined): CollageLayout {
   return LAYOUTS.find(l => l.id === id) ?? LAYOUTS.find(l => l.id === 'grid-4')!
 }
 
-/** Plantillas agrupadas por número de fotos, en orden ascendente. */
+/** Plantillas agrupadas por número de fotos, en orden ascendente; la de 1 foto va al final. */
 export function layoutsByCount(): { count: number, layouts: CollageLayout[] }[] {
   const groups = new Map<number, CollageLayout[]>()
   for (const layout of LAYOUTS) {
@@ -104,6 +104,6 @@ export function layoutsByCount(): { count: number, layouts: CollageLayout[] }[] 
     groups.get(n)!.push(layout)
   }
   return [...groups.entries()]
-    .sort((a, b) => a[0] - b[0])
+    .sort((a, b) => (a[0] === 1 ? 99 : a[0]) - (b[0] === 1 ? 99 : b[0]))
     .map(([count, layouts]) => ({ count, layouts }))
 }

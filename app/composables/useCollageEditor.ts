@@ -6,6 +6,7 @@ import {
 } from '~/utils/collage'
 import { loadImageFile, makeThumb, UnsupportedImageError } from '~/utils/images'
 import { clearProject, deleteImageBlob, loadImageBlob, loadProject, saveImageBlob, saveProject } from '~/utils/persist'
+import { track } from '~/utils/analytics'
 
 /**
  * Estado del editor. Es un singleton de módulo: solo se usa en el cliente
@@ -145,6 +146,8 @@ async function addFiles(files: Iterable<File>, targetCell: number | null = null)
   }
 
   errors.value = newErrors
+  const added = list.length - newErrors.length
+  if (added > 0) track('photos_added', { count: added })
   commit()
 }
 

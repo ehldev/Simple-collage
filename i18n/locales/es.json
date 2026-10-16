@@ -41,18 +41,45 @@
     },
     "steps": {
       "title": "Cómo hacer un collage",
-      "s1": { "title": "Elige una plantilla", "text": "Según cuántas fotos tengas y dónde lo vas a publicar: cuadrado, Instagram, historias o para imprimir." },
-      "s2": { "title": "Añade tus fotos", "text": "Arrástralas o elígelas todas a la vez: se reparten solas en la plantilla. Mueve, acerca o gira cada una." },
-      "s3": { "title": "Descarga o comparte", "text": "Exporta en JPG, PNG o WebP hasta 4K, o compártelo directo desde tu celular." }
+      "s1": {
+        "title": "Elige una plantilla",
+        "text": "Según cuántas fotos tengas y dónde lo vas a publicar: cuadrado, Instagram, historias o para imprimir."
+      },
+      "s2": {
+        "title": "Añade tus fotos",
+        "text": "Arrástralas o elígelas todas a la vez: se reparten solas en la plantilla. Mueve, acerca o gira cada una."
+      },
+      "s3": {
+        "title": "Descarga o comparte",
+        "text": "Exporta en JPG, PNG o WebP hasta 4K, o compártelo directo desde tu celular."
+      }
     },
     "features": {
       "title": "Lo que puedes hacer",
-      "formats": { "title": "Un formato para cada red", "text": "Cuadrado, 4:5 para el feed de Instagram, 9:16 para historias y TikTok, horizontal y A4 para imprimir." },
-      "frame": { "title": "Encuadre a tu gusto", "text": "Arrastra cada foto para moverla, haz zoom, gírala o voltéala. Intercambia fotos entre celdas." },
-      "text": { "title": "Texto y emojis", "text": "Ocho tipografías, contorno, sombra y etiquetas de color para títulos, fechas o dedicatorias." },
-      "filters": { "title": "Filtros y ajustes", "text": "Blanco y negro, sepia, cálido, frío y control de brillo, contraste y saturación por foto." },
-      "style": { "title": "Bordes y fondo", "text": "Ajusta el espaciado, redondea las esquinas y elige un color o degradado de fondo." },
-      "autosave": { "title": "Se guarda solo", "text": "Tu collage queda guardado en este navegador. Cierra la pestaña y sigue después donde lo dejaste." }
+      "formats": {
+        "title": "Un formato para cada red",
+        "text": "Cuadrado, 4:5 para el feed de Instagram, 9:16 para historias y TikTok, horizontal y A4 para imprimir."
+      },
+      "frame": {
+        "title": "Encuadre a tu gusto",
+        "text": "Arrastra cada foto para moverla, haz zoom, gírala o voltéala. Intercambia fotos entre celdas."
+      },
+      "text": {
+        "title": "Texto y emojis",
+        "text": "Ocho tipografías, contorno, sombra y etiquetas de color para títulos, fechas o dedicatorias."
+      },
+      "filters": {
+        "title": "Filtros y ajustes",
+        "text": "Blanco y negro, sepia, cálido, frío y control de brillo, contraste y saturación por foto."
+      },
+      "style": {
+        "title": "Bordes y fondo",
+        "text": "Ajusta el espaciado, redondea las esquinas y elige un color o degradado de fondo."
+      },
+      "autosave": {
+        "title": "Se guarda solo",
+        "text": "Tu collage queda guardado en este navegador. Cierra la pestaña y sigue después donde lo dejaste."
+      }
     },
     "privacy": {
       "title": "Tus fotos se quedan contigo",
@@ -255,12 +282,20 @@
     "terms": "Términos de uso",
     "aboutLink": "Acerca de",
     "contact": "Contacto",
-    "madeBy": "Creado por"
+    "madeBy": "Creado por",
+    "cookies": "Preferencias de cookies"
   },
   "error": {
     "notFound": "No encontramos esta página",
     "notFoundText": "Puede que el enlace esté mal escrito o que la página ya no exista.",
     "generic": "Algo salió mal",
     "back": "Ir al inicio"
+  },
+  "consent": {
+    "title": "Cookies de medición",
+    "text": "Usamos Google Analytics y el píxel de Meta para contar visitas y saber qué anuncios funcionan, solo si aceptas. Tus fotos nunca salen de tu dispositivo.",
+    "more": "Más información",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
   }
 }

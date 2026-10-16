@@ -16,7 +16,7 @@ export interface LegalPage {
 
 export type LegalKey = 'privacy' | 'terms' | 'about' | 'contact'
 
-const UPDATED = '2026-10-14'
+const UPDATED = '2026-10-16'
 
 export const LEGAL: Record<LegalKey, Record<LocaleCode, LegalPage>> = {
   privacy: {
@@ -38,16 +38,28 @@ export const LEGAL: Record<LegalKey, Record<LocaleCode, LegalPage>> = {
           p: ['No hay registro de usuarios ni formularios. No pedimos nombre, correo electrónico ni ningún otro dato personal para usar el editor.'],
         },
         {
-          h: 'Estadísticas y publicidad',
+          h: 'Estadísticas sin cookies',
           p: [
-            'Para mantener el servicio gratuito, este sitio puede mostrar anuncios servidos por Google AdSense y medir visitas de forma agregada. Estos servicios pueden usar cookies o identificadores similares para mostrar anuncios, limitar su frecuencia y medir su rendimiento.',
-            'Cuando la ley lo exija (por ejemplo, en el Espacio Económico Europeo, el Reino Unido o Suiza), te pediremos tu consentimiento antes de usar cookies no esenciales, y podrás cambiar tu elección en cualquier momento.',
-            'Puedes saber más sobre cómo usa Google los datos en policies.google.com/technologies/partner-sites y desactivar la publicidad personalizada en adssettings.google.com.',
+            'Contamos las visitas con Plausible Analytics, que no usa cookies ni guarda datos personales: solo registra datos agregados, como las páginas visitadas, el país, el tipo de dispositivo, el sitio desde el que llegaste y acciones como «descargó un collage». No sirve para identificarte.',
+          ],
+        },
+        {
+          h: 'Medición con cookies, solo si aceptas',
+          p: [
+            'Si aceptas en el aviso de cookies, también usamos Google Analytics (de Google) y el píxel de Meta (de Facebook e Instagram) para medir las visitas y saber qué anuncios nos traen usuarios. Estas herramientas guardan cookies en tu navegador (por ejemplo, _ga y _fbp) y envían a Google y Meta las páginas que visitas y las acciones que haces en el sitio, como añadir fotos o descargar un collage. Nunca reciben tus fotos ni el contenido de tus collages.',
+            'Si rechazas, el píxel de Meta no se carga y Google Analytics funciona en modo sin cookies, enviando solo señales anónimas. Puedes cambiar tu decisión cuando quieras desde «Preferencias de cookies», al pie de cualquier página.',
+            'Más información: policies.google.com/technologies/partner-sites y facebook.com/privacy/policy.',
+          ],
+        },
+        {
+          h: 'Publicidad',
+          p: [
+            'Para mantener el servicio gratuito, el sitio podrá mostrar anuncios de Google AdSense, que también usan cookies para elegir y medir los anuncios. Te pediremos tu consentimiento cuando la ley lo exija, y puedes desactivar la publicidad personalizada en adssettings.google.com.',
           ],
         },
         {
           h: 'Tus derechos',
-          p: ['Como no almacenamos datos personales en nuestros servidores, no hay datos tuyos que consultar, corregir o eliminar de nuestra parte. Puedes borrar en cualquier momento los datos guardados en tu navegador desde su configuración.'],
+          p: ['No guardamos datos personales en servidores propios. Los datos de medición los tratan Google y Meta según sus propias políticas, y puedes retirar tu consentimiento en cualquier momento desde «Preferencias de cookies». También puedes borrar los datos guardados en tu navegador desde su configuración.'],
         },
         {
           h: 'Cambios',
@@ -73,16 +85,28 @@ export const LEGAL: Record<LegalKey, Record<LocaleCode, LegalPage>> = {
           p: ['There are no user accounts or forms. We don’t ask for your name, email or any other personal data to use the editor.'],
         },
         {
-          h: 'Analytics and advertising',
+          h: 'Cookie-free analytics',
           p: [
-            'To keep the service free, this site may show ads served by Google AdSense and measure visits in aggregate. These services may use cookies or similar identifiers to show ads, limit how often you see them and measure their performance.',
-            'Where required by law (for example, in the European Economic Area, the United Kingdom or Switzerland), we will ask for your consent before using non-essential cookies, and you can change your choice at any time.',
-            'Learn more about how Google uses data at policies.google.com/technologies/partner-sites and turn off personalized ads at adssettings.google.com.',
+            'We count visits with Plausible Analytics, which uses no cookies and stores no personal data: it only records aggregate data such as pages visited, country, device type, the site you came from and actions like “downloaded a collage”. It cannot identify you.',
+          ],
+        },
+        {
+          h: 'Measurement with cookies, only if you accept',
+          p: [
+            'If you accept in the cookie notice, we also use Google Analytics (by Google) and the Meta pixel (by Facebook and Instagram) to measure visits and see which ads bring us users. These tools store cookies in your browser (for example, _ga and _fbp) and send Google and Meta the pages you visit and the actions you take on the site, such as adding photos or downloading a collage. They never receive your photos or the content of your collages.',
+            'If you reject, the Meta pixel is not loaded and Google Analytics runs in cookieless mode, sending only anonymous signals. You can change your choice at any time from “Cookie preferences” at the bottom of any page.',
+            'More information: policies.google.com/technologies/partner-sites and facebook.com/privacy/policy.',
+          ],
+        },
+        {
+          h: 'Advertising',
+          p: [
+            'To keep the service free, the site may show Google AdSense ads, which also use cookies to choose and measure ads. We will ask for your consent where required by law, and you can turn off personalized ads at adssettings.google.com.',
           ],
         },
         {
           h: 'Your rights',
-          p: ['Because we don’t store personal data on our servers, there is no data of yours for us to access, correct or delete. You can clear the data saved in your browser at any time from its settings.'],
+          p: ['We don’t store personal data on our own servers. Measurement data is handled by Google and Meta under their own policies, and you can withdraw your consent at any time from “Cookie preferences”. You can also clear the data saved in your browser from its settings.'],
         },
         {
           h: 'Changes',
@@ -108,16 +132,28 @@ export const LEGAL: Record<LegalKey, Record<LocaleCode, LegalPage>> = {
           p: ['Não há cadastro de usuários nem formulários. Não pedimos nome, e-mail ou qualquer outro dado pessoal para usar o editor.'],
         },
         {
-          h: 'Estatísticas e publicidade',
+          h: 'Estatísticas sem cookies',
           p: [
-            'Para manter o serviço gratuito, este site pode exibir anúncios do Google AdSense e medir visitas de forma agregada. Esses serviços podem usar cookies ou identificadores semelhantes para exibir anúncios, limitar sua frequência e medir seu desempenho.',
-            'Quando exigido por lei (por exemplo, na LGPD, no Espaço Econômico Europeu ou no Reino Unido), pediremos seu consentimento antes de usar cookies não essenciais, e você poderá mudar sua escolha a qualquer momento.',
-            'Saiba mais sobre como o Google usa dados em policies.google.com/technologies/partner-sites e desative anúncios personalizados em adssettings.google.com.',
+            'Contamos as visitas com o Plausible Analytics, que não usa cookies nem guarda dados pessoais: registra apenas dados agregados, como páginas visitadas, país, tipo de dispositivo, o site de onde você veio e ações como “baixou uma colagem”. Ele não permite identificar você.',
+          ],
+        },
+        {
+          h: 'Medição com cookies, só se você aceitar',
+          p: [
+            'Se você aceitar no aviso de cookies, também usamos o Google Analytics (do Google) e o pixel da Meta (do Facebook e Instagram) para medir as visitas e saber quais anúncios nos trazem usuários. Essas ferramentas guardam cookies no seu navegador (por exemplo, _ga e _fbp) e enviam ao Google e à Meta as páginas que você visita e as ações que faz no site, como adicionar fotos ou baixar uma colagem. Elas nunca recebem suas fotos nem o conteúdo das suas colagens.',
+            'Se você recusar, o pixel da Meta não é carregado e o Google Analytics funciona sem cookies, enviando apenas sinais anônimos. Você pode mudar sua decisão quando quiser em “Preferências de cookies”, no rodapé de qualquer página.',
+            'Mais informações: policies.google.com/technologies/partner-sites e facebook.com/privacy/policy.',
+          ],
+        },
+        {
+          h: 'Publicidade',
+          p: [
+            'Para manter o serviço gratuito, o site poderá exibir anúncios do Google AdSense, que também usam cookies para escolher e medir os anúncios. Pediremos seu consentimento quando a lei exigir (como a LGPD), e você pode desativar anúncios personalizados em adssettings.google.com.',
           ],
         },
         {
           h: 'Seus direitos',
-          p: ['Como não armazenamos dados pessoais em nossos servidores, não há dados seus para acessarmos, corrigirmos ou excluirmos. Você pode apagar os dados salvos no navegador a qualquer momento nas configurações dele.'],
+          p: ['Não guardamos dados pessoais em servidores próprios. Os dados de medição são tratados pelo Google e pela Meta conforme as políticas deles, e você pode retirar seu consentimento a qualquer momento em “Preferências de cookies”. Você também pode apagar os dados salvos no navegador nas configurações dele.'],
         },
         {
           h: 'Alterações',

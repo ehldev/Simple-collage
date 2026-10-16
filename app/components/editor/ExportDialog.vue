@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Download, Share2, X, CircleCheck, LoaderCircle } from 'lucide-vue-next'
 import { exportSize, renderCollage } from '~/utils/render'
+import { track } from '~/utils/analytics'
 
 const { t } = useI18n()
 const editor = useCollageEditor()
@@ -90,6 +91,14 @@ async function generate() {
     a.remove()
     setTimeout(() => URL.revokeObjectURL(url), 10_000)
     status.value = 'done'
+    track('collage_download', {
+      format: format.value,
+      size: sizeKey.value,
+      layout: state.layoutId,
+      ratio: state.ratioId,
+      photos: state.cells.filter(c => c.imageId).length,
+      texts: state.texts.length,
+    })
   }
   catch {
     status.value = 'error'
@@ -100,6 +109,7 @@ async function share() {
   if (!lastFile.value) return
   try {
     await navigator.share({ files: [lastFile.value], title: 'Simple Collage' })
+    track('collage_share', { format: format.value })
   }
   catch { /* el usuario canceló */ }
 }

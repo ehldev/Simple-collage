@@ -10,6 +10,10 @@ const ideas = computed(() => LANDINGS.map(l => ({
 })))
 
 const year = new Date().getFullYear()
+
+const config = useRuntimeConfig().public
+const usesCookies = !!(config.gaId || config.metaPixelId)
+const consent = useConsent()
 </script>
 
 <template>
@@ -49,6 +53,9 @@ const year = new Date().getFullYear()
           <li><NuxtLink :to="localePath('contacto')" class="hover:text-white">{{ t('footer.contact') }}</NuxtLink></li>
           <li><NuxtLink :to="localePath('privacidad')" class="hover:text-white">{{ t('footer.privacy') }}</NuxtLink></li>
           <li><NuxtLink :to="localePath('terminos')" class="hover:text-white">{{ t('footer.terms') }}</NuxtLink></li>
+          <li v-if="usesCookies">
+            <button type="button" class="hover:text-white" @click="consent.reopen">{{ t('footer.cookies') }}</button>
+          </li>
         </ul>
       </nav>
     </div>

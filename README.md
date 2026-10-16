@@ -21,12 +21,17 @@ NUXT_PUBLIC_SITE_URL=https://tu-dominio.com npm run generate
 
 El resultado queda en `.output/public` y se puede publicar en cualquier hosting estático (Vercel, Netlify, Cloudflare Pages…). La URL del sitio es necesaria para el sitemap, el canonical y los `hreflang`.
 
-Variables de entorno opcionales:
+Variables de entorno (ver `.env.example`):
 
 | Variable | Uso |
 |---|---|
 | `NUXT_PUBLIC_SITE_URL` | Dominio público del sitio |
 | `NUXT_PUBLIC_CONTACT_EMAIL` | Correo que se muestra en la página de contacto |
+| `NUXT_PUBLIC_PLAUSIBLE_SCRIPT` | Script de Plausible (estadísticas sin cookies) |
+| `NUXT_PUBLIC_GA_ID` | Google Analytics 4 |
+| `NUXT_PUBLIC_META_PIXEL_ID` | Meta Pixel |
+
+Cómo crear las cuentas de medición y qué eventos se envían: [docs/analitica.md](docs/analitica.md).
 
 ## Estructura
 

@@ -41,18 +41,45 @@
     },
     "steps": {
       "title": "How to make a collage",
-      "s1": { "title": "Pick a template", "text": "Based on how many photos you have and where you'll post it: square, Instagram, stories or print." },
-      "s2": { "title": "Add your photos", "text": "Drag them in or select them all at once: they fill the template automatically. Move, zoom or rotate each one." },
-      "s3": { "title": "Download or share", "text": "Export as JPG, PNG or WebP up to 4K, or share it straight from your phone." }
+      "s1": {
+        "title": "Pick a template",
+        "text": "Based on how many photos you have and where you'll post it: square, Instagram, stories or print."
+      },
+      "s2": {
+        "title": "Add your photos",
+        "text": "Drag them in or select them all at once: they fill the template automatically. Move, zoom or rotate each one."
+      },
+      "s3": {
+        "title": "Download or share",
+        "text": "Export as JPG, PNG or WebP up to 4K, or share it straight from your phone."
+      }
     },
     "features": {
       "title": "What you can do",
-      "formats": { "title": "A format for every network", "text": "Square, 4:5 for the Instagram feed, 9:16 for stories and TikTok, landscape and A4 for printing." },
-      "frame": { "title": "Frame it your way", "text": "Drag each photo to move it, zoom, rotate or flip it. Swap photos between cells." },
-      "text": { "title": "Text and emoji", "text": "Eight typefaces, outline, shadow and colored labels for titles, dates or dedications." },
-      "filters": { "title": "Filters and adjustments", "text": "Black and white, sepia, warm, cool, plus brightness, contrast and saturation per photo." },
-      "style": { "title": "Borders and background", "text": "Adjust the spacing, round the corners and pick a background color or gradient." },
-      "autosave": { "title": "Saves itself", "text": "Your collage is saved in this browser. Close the tab and pick up where you left off later." }
+      "formats": {
+        "title": "A format for every network",
+        "text": "Square, 4:5 for the Instagram feed, 9:16 for stories and TikTok, landscape and A4 for printing."
+      },
+      "frame": {
+        "title": "Frame it your way",
+        "text": "Drag each photo to move it, zoom, rotate or flip it. Swap photos between cells."
+      },
+      "text": {
+        "title": "Text and emoji",
+        "text": "Eight typefaces, outline, shadow and colored labels for titles, dates or dedications."
+      },
+      "filters": {
+        "title": "Filters and adjustments",
+        "text": "Black and white, sepia, warm, cool, plus brightness, contrast and saturation per photo."
+      },
+      "style": {
+        "title": "Borders and background",
+        "text": "Adjust the spacing, round the corners and pick a background color or gradient."
+      },
+      "autosave": {
+        "title": "Saves itself",
+        "text": "Your collage is saved in this browser. Close the tab and pick up where you left off later."
+      }
     },
     "privacy": {
       "title": "Your photos stay with you",
@@ -255,12 +282,20 @@
     "terms": "Terms of use",
     "aboutLink": "About",
     "contact": "Contact",
-    "madeBy": "Made by"
+    "madeBy": "Made by",
+    "cookies": "Cookie preferences"
   },
   "error": {
     "notFound": "We couldn't find this page",
     "notFoundText": "The link may be mistyped or the page may no longer exist.",
     "generic": "Something went wrong",
     "back": "Go to the home page"
+  },
+  "consent": {
+    "title": "Measurement cookies",
+    "text": "We use Google Analytics and the Meta pixel to count visits and see which ads work, only if you accept. Your photos never leave your device.",
+    "more": "Learn more",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }

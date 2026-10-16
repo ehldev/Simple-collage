@@ -40,6 +40,11 @@ export default defineNuxtConfig({
     public: {
       siteUrl,
       contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || '',
+      // Medición. Cada herramienta se activa solo si tiene su ID.
+      // Plausible: URL del script que da su panel (https://plausible.io/js/pa-XXXX.js).
+      plausibleScript: process.env.NUXT_PUBLIC_PLAUSIBLE_SCRIPT || '',
+      gaId: process.env.NUXT_PUBLIC_GA_ID || '',
+      metaPixelId: process.env.NUXT_PUBLIC_META_PIXEL_ID || '',
     },
   },
 
