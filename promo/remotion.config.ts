@@ -6,3 +6,6 @@ Config.setVideoImageFormat('jpeg')
 Config.setJpegQuality(92)
 Config.setCodec('h264')
 Config.setCrf(18)
+
+// El puerto 3000 está reservado para otro proyecto del autor.
+Config.setStudioPort(3457)

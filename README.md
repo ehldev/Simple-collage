@@ -8,7 +8,7 @@ Hecho con Nuxt 4 (Vue 3), Tailwind CSS 4 y `@nuxtjs/i18n` (español, inglés y p
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
+npm run dev        # http://localhost:3456
 ```
 
 Requiere Node.js 22.21+ o 24.11+.

@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2026-10-01',
   devtools: { enabled: false },
 
+  // El puerto 3000 está reservado para otro proyecto del autor.
+  devServer: { port: 3456 },
+
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/fonts',

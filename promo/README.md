@@ -11,7 +11,7 @@ El mensaje va en texto grande en pantalla, porque la mayoría ve los anuncios si
 
 ```bash
 npm install
-npm run studio        # vista previa interactiva en el navegador
+npm run studio        # vista previa en http://localhost:3457
 npm run render        # out/simple-collage-4x5.mp4
 npm run render:story  # out/simple-collage-9x16.mp4
 ```
