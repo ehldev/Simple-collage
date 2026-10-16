@@ -1,0 +1,263 @@
+{
+  "site": {
+    "name": "Simple Collage",
+    "tagline": "Creador de collages de fotos gratis"
+  },
+  "nav": {
+    "home": "Inicio",
+    "templates": "Plantillas",
+    "create": "Crear collage",
+    "ideas": "Ideas",
+    "language": "Idioma",
+    "skip": "Saltar al contenido"
+  },
+  "common": {
+    "photos": "{n} foto | {n} fotos",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "useTemplate": "Usar esta plantilla",
+    "templateLabel": "Plantilla de {n} fotos"
+  },
+  "home": {
+    "meta": {
+      "title": "Crea collages de fotos gratis en línea",
+      "description": "Une tus fotos en un collage en segundos. Más de 25 plantillas, formatos para Instagram e historias, texto y filtros. Gratis, sin registro y sin subir tus fotos a ningún servidor."
+    },
+    "hero": {
+      "title": "Junta tus fotos en un collage",
+      "w1": "Junta",
+      "w2": "tus fotos",
+      "w3": "en un",
+      "w4": "collage",
+      "lead": "Elige una plantilla, suelta tus fotos y descarga el resultado en alta calidad. Gratis, sin registro y sin que tus fotos salgan de tu dispositivo.",
+      "cta": "Crear collage",
+      "secondary": "Ver plantillas",
+      "private": "Tus fotos no se suben a ningún servidor"
+    },
+    "templates": {
+      "title": "Empieza con una plantilla",
+      "lead": "Hay plantillas de 1 a 16 fotos. Puedes cambiar de plantilla en cualquier momento sin perder tus fotos.",
+      "all": "Ver todas las plantillas"
+    },
+    "steps": {
+      "title": "Cómo hacer un collage",
+      "s1": { "title": "Elige una plantilla", "text": "Según cuántas fotos tengas y dónde lo vas a publicar: cuadrado, Instagram, historias o para imprimir." },
+      "s2": { "title": "Añade tus fotos", "text": "Arrástralas o elígelas todas a la vez: se reparten solas en la plantilla. Mueve, acerca o gira cada una." },
+      "s3": { "title": "Descarga o comparte", "text": "Exporta en JPG, PNG o WebP hasta 4K, o compártelo directo desde tu celular." }
+    },
+    "features": {
+      "title": "Lo que puedes hacer",
+      "formats": { "title": "Un formato para cada red", "text": "Cuadrado, 4:5 para el feed de Instagram, 9:16 para historias y TikTok, horizontal y A4 para imprimir." },
+      "frame": { "title": "Encuadre a tu gusto", "text": "Arrastra cada foto para moverla, haz zoom, gírala o voltéala. Intercambia fotos entre celdas." },
+      "text": { "title": "Texto y emojis", "text": "Ocho tipografías, contorno, sombra y etiquetas de color para títulos, fechas o dedicatorias." },
+      "filters": { "title": "Filtros y ajustes", "text": "Blanco y negro, sepia, cálido, frío y control de brillo, contraste y saturación por foto." },
+      "style": { "title": "Bordes y fondo", "text": "Ajusta el espaciado, redondea las esquinas y elige un color o degradado de fondo." },
+      "autosave": { "title": "Se guarda solo", "text": "Tu collage queda guardado en este navegador. Cierra la pestaña y sigue después donde lo dejaste." }
+    },
+    "privacy": {
+      "title": "Tus fotos se quedan contigo",
+      "text": "Simple Collage hace todo dentro de tu navegador: las fotos no se suben a ningún servidor, no necesitas cuenta y el collage descargado no lleva marca de agua."
+    },
+    "ideas": {
+      "title": "Ideas para tu próximo collage"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿Simple Collage es gratis?",
+      "a1": "Sí. Todas las plantillas, filtros y opciones de descarga son gratis y el collage no lleva marca de agua.",
+      "q2": "¿Necesito crear una cuenta?",
+      "a2": "No. Abres el editor y empiezas a trabajar. No pedimos correo ni datos personales.",
+      "q3": "¿Se suben mis fotos a internet?",
+      "a3": "No. Las fotos se procesan en tu propio navegador y nunca se envían a un servidor. Solo tú tienes acceso a ellas.",
+      "q4": "¿Funciona en el celular?",
+      "a4": "Sí. El editor funciona en Android y iPhone: puedes elegir fotos de tu galería, pellizcar para hacer zoom y compartir el collage directamente.",
+      "q5": "¿De qué tamaño es el collage que descargo?",
+      "a5": "Puedes elegir entre 1080 px para redes sociales, 2160 px para alta calidad o 3840 px en el lado más largo para imprimir.",
+      "q6": "¿Puedo seguir editando más tarde?",
+      "a6": "Sí. El collage se guarda automáticamente en este navegador. Si vuelves al editor desde el mismo dispositivo, lo encontrarás tal como lo dejaste."
+    },
+    "final": {
+      "title": "Tus fotos ya tienen plantilla",
+      "text": "Empieza ahora; puedes cambiar todo después."
+    }
+  },
+  "templatesPage": {
+    "meta": {
+      "title": "Plantillas de collage gratis",
+      "description": "Más de 25 plantillas de collage de 1 a 16 fotos: cuadrículas, mosaicos, tiras y diseños con foto principal. Elige una y añade tus fotos."
+    },
+    "title": "Plantillas de collage",
+    "lead": "Elige una plantilla según el número de fotos. Dentro del editor puedes cambiarla, ajustar el formato y el espaciado.",
+    "all": "Todas",
+    "filterLabel": "Filtrar por número de fotos"
+  },
+  "editor": {
+    "meta": {
+      "title": "Editor de collages",
+      "description": "Editor de collages de fotos gratis: plantillas, texto, filtros y descarga en alta calidad."
+    },
+    "loading": "Cargando el editor…",
+    "canvasLabel": "Lienzo del collage. Toca una celda para elegir o editar su foto.",
+    "placeholder": "Añadir foto",
+    "dropHere": "Suelta tus fotos para añadirlas",
+    "tabs": {
+      "layout": "Plantilla",
+      "photos": "Fotos",
+      "photo": "Foto",
+      "style": "Estilo",
+      "text": "Texto"
+    },
+    "toolbar": {
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "export": "Descargar",
+      "newProject": "Nuevo",
+      "newConfirm": "¿Empezar un collage nuevo? Se quitarán las fotos y los textos actuales.",
+      "newConfirmYes": "Empezar de nuevo",
+      "saved": "Guardado en este navegador"
+    },
+    "ratio": {
+      "label": "Formato",
+      "1x1": "Cuadrado",
+      "4x5": "Instagram",
+      "9x16": "Historia",
+      "3x4": "Vertical",
+      "2x3": "Foto 2:3",
+      "a4": "A4",
+      "16x9": "Horizontal",
+      "4x3": "Horizontal 4:3"
+    },
+    "layout": {
+      "title": "Elige una plantilla",
+      "hint": "Tus fotos se mantienen al cambiar de plantilla."
+    },
+    "photos": {
+      "add": "Añadir fotos",
+      "hint": "JPG, PNG, WebP o AVIF. Puedes elegir varias a la vez.",
+      "tray": "Tus fotos",
+      "trayEmpty": "Aún no has añadido fotos.",
+      "placeHint": "Toca una foto para ponerla en la celda seleccionada o arrástrala sobre el collage.",
+      "inUse": "En el collage",
+      "remove": "Quitar {name}",
+      "loading": "Cargando fotos…"
+    },
+    "errors": {
+      "heic": "{name}: este navegador no abre fotos HEIC del iPhone. Elígela desde la galería como JPG o activa «Más compatible» en Ajustes › Cámara › Formatos.",
+      "type": "{name}: este archivo no es una imagen compatible.",
+      "decode": "{name}: no se pudo abrir la imagen. Prueba con otra copia del archivo.",
+      "dismiss": "Entendido"
+    },
+    "cell": {
+      "noSelection": "Toca una celda del collage para editar su foto.",
+      "empty": "Esta celda está vacía.",
+      "choose": "Elegir foto",
+      "replace": "Reemplazar",
+      "zoom": "Zoom",
+      "rotate": "Girar",
+      "flip": "Voltear",
+      "swap": "Intercambiar",
+      "swapHint": "Ahora toca otra celda para intercambiar las fotos.",
+      "clear": "Quitar de la celda",
+      "reset": "Restablecer encuadre",
+      "dragHint": "Arrastra la foto en el collage para encuadrarla. Usa la rueda del ratón o pellizca para acercar.",
+      "filters": "Filtros",
+      "adjust": "Ajustes",
+      "brightness": "Brillo",
+      "contrast": "Contraste",
+      "saturate": "Saturación",
+      "resetFilters": "Restablecer ajustes",
+      "presets": {
+        "original": "Original",
+        "vivid": "Vívido",
+        "warm": "Cálido",
+        "cool": "Frío",
+        "bw": "B/N",
+        "sepia": "Sepia",
+        "fade": "Suave",
+        "drama": "Drama"
+      }
+    },
+    "style": {
+      "spacing": "Espaciado",
+      "padding": "Margen exterior",
+      "radius": "Esquinas redondeadas",
+      "background": "Fondo",
+      "solid": "Color",
+      "gradient": "Degradado",
+      "angle": "Dirección",
+      "customColor": "Elegir otro color",
+      "color1": "Color inicial",
+      "color2": "Color final"
+    },
+    "text": {
+      "add": "Añadir texto",
+      "default": "Escribe aquí",
+      "presetsTitle": "Añadir",
+      "presets": {
+        "heading": "Título",
+        "label": "Etiqueta",
+        "handwritten": "Manuscrito",
+        "date": "Fecha"
+      },
+      "content": "Texto",
+      "font": "Tipografía",
+      "size": "Tamaño",
+      "color": "Color",
+      "background": "Fondo del texto",
+      "none": "Sin fondo",
+      "outline": "Contorno",
+      "shadow": "Sombra",
+      "duplicate": "Duplicar",
+      "delete": "Eliminar",
+      "emojis": "Emojis",
+      "hint": "Arrastra el texto sobre el collage para moverlo.",
+      "noSelection": "Toca un texto del collage para editarlo, o añade uno nuevo."
+    },
+    "export": {
+      "title": "Descargar collage",
+      "format": "Tipo de archivo",
+      "size": "Tamaño",
+      "sizes": {
+        "social": "Redes sociales",
+        "hd": "Alta calidad",
+        "max": "Máxima, para imprimir"
+      },
+      "formats": {
+        "jpeg": "JPG: el más compatible",
+        "png": "PNG: sin pérdida, más pesado",
+        "webp": "WebP: ligero, ideal para web"
+      },
+      "download": "Descargar",
+      "generating": "Generando…",
+      "done": "Tu collage se descargó.",
+      "share": "Compartir",
+      "emptyCells": "Hay celdas sin foto: en la imagen se verán vacías, con el color de fondo.",
+      "failed": "No se pudo generar la imagen. Prueba con un tamaño menor."
+    }
+  },
+  "landing": {
+    "cta": "Crear mi collage",
+    "templatesTitle": "Plantillas recomendadas",
+    "stepsTitle": "Cómo hacerlo",
+    "tipsTitle": "Consejos",
+    "faqTitle": "Preguntas frecuentes",
+    "related": "Más ideas de collage"
+  },
+  "footer": {
+    "about": "Creador de collages de fotos gratis que funciona en tu navegador. Sin registro y sin subir tus fotos.",
+    "product": "Producto",
+    "ideas": "Ideas",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos de uso",
+    "aboutLink": "Acerca de",
+    "contact": "Contacto",
+    "madeBy": "Creado por"
+  },
+  "error": {
+    "notFound": "No encontramos esta página",
+    "notFoundText": "Puede que el enlace esté mal escrito o que la página ya no exista.",
+    "generic": "Algo salió mal",
+    "back": "Ir al inicio"
+  }
+}

@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky: #EEF1F6;
+  --color-sky-deep: #DDE3EE;
+  --color-paper: #FFFFFF;
+  --color-ink: #16213E;
+  --color-ink-soft: #4A5675;
+  --color-ink-faint: #8A93AB;
+  --color-tomato: #FF4D6D;
+  --color-tomato-deep: #E23257;
+  --color-sun: #FFC93C;
+  --color-line: #D3DAE6;
+
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-cell: 14px;
+}
+
+@layer base {
+  html {
+    background: var(--color-sky);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--color-sky);
+    min-height: 100dvh;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-tomato);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--color-sun);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 0.75rem 1.4rem;
+    transition: background-color 0.15s, color 0.15s, transform 0.1s;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .btn-primary {
+    background: var(--color-tomato);
+    color: #fff;
+  }
+  .btn-primary:hover:not(:disabled) { background: var(--color-tomato-deep); }
+
+  .btn-ink {
+    background: var(--color-ink);
+    color: #fff;
+  }
+  .btn-ink:hover:not(:disabled) { background: #22305a; }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--color-ink);
+    box-shadow: inset 0 0 0 1.5px var(--color-line);
+  }
+  .btn-ghost:hover:not(:disabled) { background: var(--color-paper); }
+
+  .prose-simple h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .prose-simple p,
+  .prose-simple li {
+    color: var(--color-ink-soft);
+    line-height: 1.7;
+  }
+  .prose-simple p + p { margin-top: 0.9rem; }
+  .prose-simple ul { list-style: disc; padding-left: 1.25rem; margin-top: 0.75rem; }
+  .prose-simple li + li { margin-top: 0.35rem; }
+  .prose-simple a { color: var(--color-tomato-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Range inputs del editor */
+  .range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--color-sky-deep);
+    cursor: pointer;
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-ink);
+    border: 3px solid #fff;
+    box-shadow: 0 1px 3px rgba(22, 33, 62, 0.35);
+  }
+  .range::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-ink);
+    border: 3px solid #fff;
+  }
+}
+
+/* Fuentes disponibles para el texto del collage: se declaran aquí para que
+   @nuxt/fonts las descargue y el canvas pueda usarlas. */
+.font-opt-bricolage { font-family: "Bricolage Grotesque"; }
+.font-opt-instrument { font-family: "Instrument Sans"; }
+.font-opt-pacifico { font-family: "Pacifico"; }
+.font-opt-caveat { font-family: "Caveat"; }
+.font-opt-playfair { font-family: "Playfair Display"; }
+.font-opt-bebas { font-family: "Bebas Neue"; }
+.font-opt-marker { font-family: "Permanent Marker"; }
+.font-opt-dmserif { font-family: "DM Serif Display"; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

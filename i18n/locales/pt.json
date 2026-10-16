@@ -1,0 +1,263 @@
+{
+  "site": {
+    "name": "Simple Collage",
+    "tagline": "Criador de colagens de fotos grátis"
+  },
+  "nav": {
+    "home": "Início",
+    "templates": "Modelos",
+    "create": "Criar colagem",
+    "ideas": "Ideias",
+    "language": "Idioma",
+    "skip": "Pular para o conteúdo"
+  },
+  "common": {
+    "photos": "{n} foto | {n} fotos",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "useTemplate": "Usar este modelo",
+    "templateLabel": "Modelo de {n} fotos"
+  },
+  "home": {
+    "meta": {
+      "title": "Crie colagens de fotos grátis online",
+      "description": "Junte suas fotos em uma colagem em segundos. Mais de 25 modelos, formatos para Instagram e stories, texto e filtros. Grátis, sem cadastro e sem enviar suas fotos para nenhum servidor."
+    },
+    "hero": {
+      "title": "Junte suas fotos em uma colagem",
+      "w1": "Junte",
+      "w2": "suas fotos",
+      "w3": "em uma",
+      "w4": "colagem",
+      "lead": "Escolha um modelo, solte suas fotos e baixe o resultado em alta qualidade. Grátis, sem cadastro e sem que suas fotos saiam do seu dispositivo.",
+      "cta": "Criar colagem",
+      "secondary": "Ver modelos",
+      "private": "Suas fotos não são enviadas para nenhum servidor"
+    },
+    "templates": {
+      "title": "Comece com um modelo",
+      "lead": "Há modelos de 1 a 16 fotos. Troque de modelo quando quiser sem perder suas fotos.",
+      "all": "Ver todos os modelos"
+    },
+    "steps": {
+      "title": "Como fazer uma colagem",
+      "s1": { "title": "Escolha um modelo", "text": "De acordo com quantas fotos você tem e onde vai publicar: quadrado, Instagram, stories ou para imprimir." },
+      "s2": { "title": "Adicione suas fotos", "text": "Arraste ou selecione todas de uma vez: elas se distribuem sozinhas no modelo. Mova, aproxime ou gire cada uma." },
+      "s3": { "title": "Baixe ou compartilhe", "text": "Exporte em JPG, PNG ou WebP até 4K, ou compartilhe direto do seu celular." }
+    },
+    "features": {
+      "title": "O que você pode fazer",
+      "formats": { "title": "Um formato para cada rede", "text": "Quadrado, 4:5 para o feed do Instagram, 9:16 para stories e TikTok, horizontal e A4 para imprimir." },
+      "frame": { "title": "Enquadramento do seu jeito", "text": "Arraste cada foto para movê-la, dê zoom, gire ou espelhe. Troque fotos entre as células." },
+      "text": { "title": "Texto e emojis", "text": "Oito fontes, contorno, sombra e etiquetas coloridas para títulos, datas ou dedicatórias." },
+      "filters": { "title": "Filtros e ajustes", "text": "Preto e branco, sépia, quente, frio e controle de brilho, contraste e saturação por foto." },
+      "style": { "title": "Bordas e fundo", "text": "Ajuste o espaçamento, arredonde os cantos e escolha uma cor ou degradê de fundo." },
+      "autosave": { "title": "Salva sozinho", "text": "Sua colagem fica salva neste navegador. Feche a aba e continue depois de onde parou." }
+    },
+    "privacy": {
+      "title": "Suas fotos ficam com você",
+      "text": "O Simple Collage faz tudo dentro do seu navegador: as fotos não são enviadas para nenhum servidor, você não precisa de conta e a colagem baixada não tem marca d'água."
+    },
+    "ideas": {
+      "title": "Ideias para sua próxima colagem"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "q1": "O Simple Collage é grátis?",
+      "a1": "Sim. Todos os modelos, filtros e opções de download são grátis, e a colagem não tem marca d'água.",
+      "q2": "Preciso criar uma conta?",
+      "a2": "Não. Abra o editor e comece. Não pedimos e-mail nem dados pessoais.",
+      "q3": "Minhas fotos são enviadas para a internet?",
+      "a3": "Não. As fotos são processadas no seu próprio navegador e nunca são enviadas para um servidor. Só você tem acesso a elas.",
+      "q4": "Funciona no celular?",
+      "a4": "Sim. O editor funciona no Android e no iPhone: escolha fotos da galeria, faça pinça para dar zoom e compartilhe a colagem diretamente.",
+      "q5": "Qual o tamanho da colagem que eu baixo?",
+      "a5": "Você pode escolher 1080 px para redes sociais, 2160 px para alta qualidade ou 3840 px no lado maior para imprimir.",
+      "q6": "Posso continuar editando depois?",
+      "a6": "Sim. A colagem é salva automaticamente neste navegador. Volte ao editor no mesmo dispositivo e ela estará como você deixou."
+    },
+    "final": {
+      "title": "Suas fotos já têm um modelo",
+      "text": "Comece agora; você pode mudar tudo depois."
+    }
+  },
+  "templatesPage": {
+    "meta": {
+      "title": "Modelos de colagem grátis",
+      "description": "Mais de 25 modelos de colagem de 1 a 16 fotos: grades, mosaicos, tiras e layouts com foto principal. Escolha um e adicione suas fotos."
+    },
+    "title": "Modelos de colagem",
+    "lead": "Escolha um modelo pelo número de fotos. No editor você pode trocá-lo e ajustar o formato e o espaçamento.",
+    "all": "Todos",
+    "filterLabel": "Filtrar por número de fotos"
+  },
+  "editor": {
+    "meta": {
+      "title": "Editor de colagens",
+      "description": "Editor de colagens de fotos grátis: modelos, texto, filtros e download em alta qualidade."
+    },
+    "loading": "Carregando o editor…",
+    "canvasLabel": "Tela da colagem. Toque em uma célula para escolher ou editar a foto.",
+    "placeholder": "Adicionar foto",
+    "dropHere": "Solte suas fotos para adicioná-las",
+    "tabs": {
+      "layout": "Modelo",
+      "photos": "Fotos",
+      "photo": "Foto",
+      "style": "Estilo",
+      "text": "Texto"
+    },
+    "toolbar": {
+      "undo": "Desfazer",
+      "redo": "Refazer",
+      "export": "Baixar",
+      "newProject": "Nova",
+      "newConfirm": "Começar uma nova colagem? As fotos e textos atuais serão removidos.",
+      "newConfirmYes": "Começar de novo",
+      "saved": "Salvo neste navegador"
+    },
+    "ratio": {
+      "label": "Formato",
+      "1x1": "Quadrado",
+      "4x5": "Instagram",
+      "9x16": "Stories",
+      "3x4": "Vertical",
+      "2x3": "Foto 2:3",
+      "a4": "A4",
+      "16x9": "Horizontal",
+      "4x3": "Horizontal 4:3"
+    },
+    "layout": {
+      "title": "Escolha um modelo",
+      "hint": "Suas fotos continuam ao trocar de modelo."
+    },
+    "photos": {
+      "add": "Adicionar fotos",
+      "hint": "JPG, PNG, WebP ou AVIF. Você pode selecionar várias de uma vez.",
+      "tray": "Suas fotos",
+      "trayEmpty": "Você ainda não adicionou fotos.",
+      "placeHint": "Toque em uma foto para colocá-la na célula selecionada ou arraste-a sobre a colagem.",
+      "inUse": "Na colagem",
+      "remove": "Remover {name}",
+      "loading": "Carregando fotos…"
+    },
+    "errors": {
+      "heic": "{name}: este navegador não abre fotos HEIC do iPhone. Escolha-a na galeria como JPG ou ative “Mais Compatível” em Ajustes › Câmera › Formatos.",
+      "type": "{name}: este arquivo não é uma imagem compatível.",
+      "decode": "{name}: não foi possível abrir a imagem. Tente outra cópia do arquivo.",
+      "dismiss": "Entendi"
+    },
+    "cell": {
+      "noSelection": "Toque em uma célula da colagem para editar a foto.",
+      "empty": "Esta célula está vazia.",
+      "choose": "Escolher foto",
+      "replace": "Substituir",
+      "zoom": "Zoom",
+      "rotate": "Girar",
+      "flip": "Espelhar",
+      "swap": "Trocar",
+      "swapHint": "Agora toque em outra célula para trocar as fotos.",
+      "clear": "Remover da célula",
+      "reset": "Redefinir enquadramento",
+      "dragHint": "Arraste a foto na colagem para enquadrá-la. Use a roda do mouse ou faça pinça para aproximar.",
+      "filters": "Filtros",
+      "adjust": "Ajustes",
+      "brightness": "Brilho",
+      "contrast": "Contraste",
+      "saturate": "Saturação",
+      "resetFilters": "Redefinir ajustes",
+      "presets": {
+        "original": "Original",
+        "vivid": "Vívido",
+        "warm": "Quente",
+        "cool": "Frio",
+        "bw": "P&B",
+        "sepia": "Sépia",
+        "fade": "Suave",
+        "drama": "Drama"
+      }
+    },
+    "style": {
+      "spacing": "Espaçamento",
+      "padding": "Margem externa",
+      "radius": "Cantos arredondados",
+      "background": "Fundo",
+      "solid": "Cor",
+      "gradient": "Degradê",
+      "angle": "Direção",
+      "customColor": "Escolher outra cor",
+      "color1": "Cor inicial",
+      "color2": "Cor final"
+    },
+    "text": {
+      "add": "Adicionar texto",
+      "default": "Escreva aqui",
+      "presetsTitle": "Adicionar",
+      "presets": {
+        "heading": "Título",
+        "label": "Etiqueta",
+        "handwritten": "Manuscrito",
+        "date": "Data"
+      },
+      "content": "Texto",
+      "font": "Fonte",
+      "size": "Tamanho",
+      "color": "Cor",
+      "background": "Fundo do texto",
+      "none": "Sem fundo",
+      "outline": "Contorno",
+      "shadow": "Sombra",
+      "duplicate": "Duplicar",
+      "delete": "Excluir",
+      "emojis": "Emojis",
+      "hint": "Arraste o texto sobre a colagem para movê-lo.",
+      "noSelection": "Toque em um texto da colagem para editá-lo ou adicione um novo."
+    },
+    "export": {
+      "title": "Baixar colagem",
+      "format": "Tipo de arquivo",
+      "size": "Tamanho",
+      "sizes": {
+        "social": "Redes sociais",
+        "hd": "Alta qualidade",
+        "max": "Máxima, para imprimir"
+      },
+      "formats": {
+        "jpeg": "JPG: o mais compatível",
+        "png": "PNG: sem perdas, mais pesado",
+        "webp": "WebP: leve, ideal para web"
+      },
+      "download": "Baixar",
+      "generating": "Gerando…",
+      "done": "Sua colagem foi baixada.",
+      "share": "Compartilhar",
+      "emptyCells": "Há células sem foto: elas aparecerão vazias, com a cor de fundo.",
+      "failed": "Não foi possível gerar a imagem. Tente um tamanho menor."
+    }
+  },
+  "landing": {
+    "cta": "Criar minha colagem",
+    "templatesTitle": "Modelos recomendados",
+    "stepsTitle": "Como fazer",
+    "tipsTitle": "Dicas",
+    "faqTitle": "Perguntas frequentes",
+    "related": "Mais ideias de colagem"
+  },
+  "footer": {
+    "about": "Criador de colagens de fotos grátis que funciona no seu navegador. Sem cadastro e sem enviar suas fotos.",
+    "product": "Produto",
+    "ideas": "Ideias",
+    "legal": "Legal",
+    "privacy": "Privacidade",
+    "terms": "Termos de uso",
+    "aboutLink": "Sobre",
+    "contact": "Contato",
+    "madeBy": "Criado por"
+  },
+  "error": {
+    "notFound": "Não encontramos esta página",
+    "notFoundText": "O link pode estar errado ou a página pode não existir mais.",
+    "generic": "Algo deu errado",
+    "back": "Ir para o início"
+  }
+}
