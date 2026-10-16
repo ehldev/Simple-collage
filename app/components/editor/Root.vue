@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LayoutGrid, Images, Crop, Palette, Type, Undo2, Redo2, Download, FilePlus2, X } from 'lucide-vue-next'
+import { LayoutGrid, Images, Crop, Palette, Type, Undo2, Redo2, RotateCcw, Download, FilePlus2, X } from 'lucide-vue-next'
 import { ACCEPTED_TYPES } from '~/utils/images'
 import type { EditorTab } from '~/composables/useEditorUi'
 
@@ -69,6 +69,10 @@ function errorText(err: { name: string, reason: string }) {
       </button>
       <button type="button" class="icon-btn" :disabled="!editor.canRedo.value" :aria-label="t('editor.toolbar.redo')" :title="`${t('editor.toolbar.redo')} (Ctrl+Shift+Z)`" @click="editor.redo">
         <Redo2 :size="19" aria-hidden="true" />
+      </button>
+      <button type="button" class="icon-btn sm:!w-auto sm:gap-1.5 sm:px-3" :title="t('editor.toolbar.resetDesignHint')" @click="editor.resetDesign">
+        <RotateCcw :size="19" aria-hidden="true" />
+        <span class="sr-only text-sm font-semibold sm:not-sr-only">{{ t('editor.toolbar.resetDesign') }}</span>
       </button>
 
       <div class="relative">

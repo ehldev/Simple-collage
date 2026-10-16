@@ -112,6 +112,8 @@
       "redo": "Refazer",
       "export": "Baixar",
       "newProject": "Nova",
+      "resetDesign": "Redefinir design",
+      "resetDesignHint": "Volta o espaçamento, o fundo, o enquadramento e os filtros ao início. Suas fotos e textos são mantidos.",
       "newConfirm": "Começar uma nova colagem? As fotos e textos atuais serão removidos.",
       "newConfirmYes": "Começar de novo",
       "saved": "Salvo neste navegador"
@@ -180,6 +182,7 @@
     "style": {
       "spacing": "Espaçamento",
       "padding": "Margem externa",
+      "linkPadding": "Margem igual ao espaçamento",
       "radius": "Cantos arredondados",
       "background": "Fundo",
       "solid": "Cor",

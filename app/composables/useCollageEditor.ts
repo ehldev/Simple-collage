@@ -214,14 +214,42 @@ function resetCellFilters(index: number) {
   updateCell(index, { filters: { ...DEFAULT_FILTERS } }, true)
 }
 
+/**
+ * Devuelve el diseño a sus valores iniciales: espaciado, margen, esquinas,
+ * fondo y el encuadre/filtros de cada foto. Conserva fotos, plantilla,
+ * formato y textos. Se puede deshacer.
+ */
+function resetDesign() {
+  const d = defaultState()
+  state.gap = d.gap
+  state.padding = d.padding
+  state.linkPadding = d.linkPadding
+  state.radius = d.radius
+  state.background = d.background
+  state.cells.forEach((cell) => {
+    Object.assign(cell, emptyCell(), { imageId: cell.imageId })
+  })
+  swapFrom.value = null
+  commit()
+}
+
 function getImage(id: string) {
   return bitmaps.get(id)
 }
 
 // --- Texto ---
 
+/** Alturas donde colocar textos nuevos, en orden de preferencia. */
+const TEXT_SLOTS = [0.5, 0.82, 0.18, 0.66, 0.34]
+
+/** Primera altura que no está ocupada por otro texto, para que no se encimen. */
+function freeTextY() {
+  const used = state.texts.map(t => t.y)
+  return TEXT_SLOTS.find(y => used.every(u => Math.abs(u - y) > 0.1))
+    ?? TEXT_SLOTS[state.texts.length % TEXT_SLOTS.length]!
+}
+
 function addText(partial: Partial<TextLayer>) {
-  const offset = (state.texts.length % 5) * 0.06
   const layer: TextLayer = {
     id: createId(),
     content: 'Texto',
@@ -233,7 +261,7 @@ function addText(partial: Partial<TextLayer>) {
     outline: false,
     shadow: true,
     x: 0.5,
-    y: 0.5 + offset,
+    y: freeTextY(),
     ...partial,
   }
   state.texts.push(layer)
@@ -359,6 +387,7 @@ export function useCollageEditor() {
     rotateCell,
     resetCellFrame,
     resetCellFilters,
+    resetDesign,
     getImage,
     addText,
     updateText,

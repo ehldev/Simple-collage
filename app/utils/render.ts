@@ -42,7 +42,7 @@ export function scaleFactor(width: number, height: number) {
 
 export function cellRects(state: CollageState, width: number, height: number): Rect[] {
   const k = scaleFactor(width, height)
-  const pad = state.padding * k
+  const pad = (state.linkPadding ? state.gap : state.padding) * k
   const half = (state.gap * k) / 2
   const innerW = width - pad * 2
   const innerH = height - pad * 2
@@ -211,9 +211,9 @@ function paintText(ctx: CanvasRenderingContext2D, layer: TextLayer, width: numbe
   box.lines.forEach((line, i) => {
     const y = startY + i * box.lineH
     if (layer.shadow) {
-      ctx.shadowColor = 'rgba(0, 0, 0, 0.45)'
-      ctx.shadowBlur = fontPx * 0.18
-      ctx.shadowOffsetY = fontPx * 0.06
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.6)'
+      ctx.shadowBlur = fontPx * 0.35
+      ctx.shadowOffsetY = fontPx * 0.03
     }
     if (layer.outline) {
       ctx.lineWidth = fontPx * 0.16

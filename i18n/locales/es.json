@@ -112,6 +112,8 @@
       "redo": "Rehacer",
       "export": "Descargar",
       "newProject": "Nuevo",
+      "resetDesign": "Restablecer diseño",
+      "resetDesignHint": "Vuelve el espaciado, el fondo, el encuadre y los filtros a como estaban al inicio. Tus fotos y textos se mantienen.",
       "newConfirm": "¿Empezar un collage nuevo? Se quitarán las fotos y los textos actuales.",
       "newConfirmYes": "Empezar de nuevo",
       "saved": "Guardado en este navegador"
@@ -180,6 +182,7 @@
     "style": {
       "spacing": "Espaciado",
       "padding": "Margen exterior",
+      "linkPadding": "Margen igual al espaciado",
       "radius": "Esquinas redondeadas",
       "background": "Fondo",
       "solid": "Color",

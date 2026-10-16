@@ -74,6 +74,8 @@ export interface CollageState {
   ratioId: RatioId
   gap: number
   padding: number
+  /** Si es true, el margen exterior es igual al espaciado entre fotos. */
+  linkPadding: boolean
   radius: number
   background: Background
   cells: CellState[]
@@ -87,6 +89,19 @@ export interface StoredImage {
   height: number
 }
 
+/** Fondos sólidos: neutros y pasteles, que no compiten con las fotos. */
+export const SOLID_BACKGROUNDS = ['#FFFFFF', '#F6F1EB', '#E9ECF2', '#16213E', '#000000', '#FAD4D8', '#FFE7A8', '#CFE3F7', '#D3EEDC', '#FF4D6D']
+
+/** Degradados suaves de dos tonos vecinos, para que no se vean "lavados" ni chillones. */
+export const GRADIENTS: [string, string][] = [
+  ['#FF9A8B', '#FF6A88'],
+  ['#FFE29F', '#FFA99F'],
+  ['#A1C4FD', '#C2E9FB'],
+  ['#E0C3FC', '#8EC5FC'],
+  ['#D4FC79', '#96E6A1'],
+  ['#16213E', '#4A3A7A'],
+]
+
 export function emptyCell(): CellState {
   return { imageId: null, zoom: 1, panX: 0, panY: 0, rotation: 0, flipX: false, filters: { ...DEFAULT_FILTERS } }
 }
@@ -97,8 +112,9 @@ export function defaultState(): CollageState {
     ratioId: '1:1',
     gap: 16,
     padding: 16,
+    linkPadding: true,
     radius: 0,
-    background: { type: 'solid', color: '#FFFFFF', color2: '#FFC93C', angle: 135 },
+    background: { type: 'solid', color: '#FFFFFF', color2: GRADIENTS[0]![1], angle: 135 },
     cells: [emptyCell(), emptyCell(), emptyCell(), emptyCell()],
     texts: [],
   }

@@ -1,20 +1,37 @@
 <script setup lang="ts">
+import { GRADIENTS, SOLID_BACKGROUNDS } from '~/utils/collage'
+
 const { t } = useI18n()
 const editor = useCollageEditor()
 const { state } = editor
 
-const SOLIDS = ['#FFFFFF', '#F4F1EC', '#EEF1F6', '#16213E', '#000000', '#FF4D6D', '#FFC93C', '#F9A8BA', '#8DB0E8', '#7BC8A4']
-const GRADIENTS: [string, string][] = [
-  ['#FF4D6D', '#FFC93C'],
-  ['#8DB0E8', '#F9A8BA'],
-  ['#16213E', '#6E4C9A'],
-  ['#7BC8A4', '#8DB0E8'],
-  ['#FFE29A', '#FF9A8B'],
-  ['#FFFFFF', '#DDE3EE'],
-]
-
 function setBg(patch: Partial<typeof state.background>) {
   Object.assign(state.background, patch)
+  editor.commit()
+}
+
+function isPreset(a: string, b: string) {
+  return state.background.color === a && state.background.color2 === b
+}
+
+/** Al pasar a degradado, si los colores no son de un preset, se arranca con el primero. */
+function setType(type: 'solid' | 'gradient') {
+  const bg = state.background
+  if (type === 'gradient' && !GRADIENTS.some(([a, b]) => isPreset(a, b))) {
+    setBg({ type, color: GRADIENTS[0]![0], color2: GRADIENTS[0]![1] })
+  }
+  else if (type === 'solid' && !SOLID_BACKGROUNDS.includes(bg.color)) {
+    setBg({ type, color: SOLID_BACKGROUNDS[0]! })
+  }
+  else {
+    setBg({ type })
+  }
+}
+
+function setLinked(linked: boolean) {
+  // Al desvincular, el margen arranca con el valor que se estaba viendo.
+  if (!linked) state.padding = state.gap
+  state.linkPadding = linked
   editor.commit()
 }
 
@@ -24,7 +41,13 @@ const px = (v: number) => `${Math.round(v)}`
 <template>
   <div class="space-y-6">
     <EditorRangeField :label="t('editor.style.spacing')" v-model="state.gap" :min="0" :max="80" :format="px" @commit="editor.commit" />
-    <EditorRangeField :label="t('editor.style.padding')" v-model="state.padding" :min="0" :max="100" :format="px" @commit="editor.commit" />
+    <div class="space-y-3">
+      <label class="flex cursor-pointer items-center gap-2 text-sm font-medium">
+        <input type="checkbox" class="size-4 accent-tomato" :checked="state.linkPadding" @change="setLinked(($event.target as HTMLInputElement).checked)">
+        {{ t('editor.style.linkPadding') }}
+      </label>
+      <EditorRangeField v-if="!state.linkPadding" :label="t('editor.style.padding')" v-model="state.padding" :min="0" :max="100" :format="px" @commit="editor.commit" />
+    </div>
     <EditorRangeField :label="t('editor.style.radius')" v-model="state.radius" :min="0" :max="80" :format="px" @commit="editor.commit" />
 
     <section>
@@ -38,7 +61,7 @@ const px = (v: number) => `${Math.round(v)}`
           :aria-checked="state.background.type === type"
           class="rounded-full px-4 py-1.5 text-sm font-semibold transition-colors"
           :class="state.background.type === type ? 'bg-paper text-ink shadow-sm' : 'text-ink-soft'"
-          @click="setBg({ type })"
+          @click="setType(type)"
         >
           {{ t(`editor.style.${type}`) }}
         </button>
@@ -47,7 +70,7 @@ const px = (v: number) => `${Math.round(v)}`
       <div v-if="state.background.type === 'solid'" class="mt-4">
         <EditorColorSwatches
           :model-value="state.background.color"
-          :colors="SOLIDS"
+          :colors="SOLID_BACKGROUNDS"
           :label="t('editor.style.background')"
           @update:model-value="color => setBg({ color })"
         />
@@ -60,7 +83,7 @@ const px = (v: number) => `${Math.round(v)}`
             :key="i"
             type="button"
             class="size-10 rounded-xl ring-offset-2"
-            :class="state.background.color === a && state.background.color2 === b ? 'ring-2 ring-ink' : 'ring-1 ring-black/10'"
+            :class="isPreset(a, b) ? 'ring-2 ring-ink' : 'ring-1 ring-black/10'"
             :style="{ background: `linear-gradient(135deg, ${a}, ${b})` }"
             :aria-label="`${a} → ${b}`"
             @click="setBg({ color: a, color2: b })"

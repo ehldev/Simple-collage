@@ -112,6 +112,8 @@
       "redo": "Redo",
       "export": "Download",
       "newProject": "New",
+      "resetDesign": "Reset design",
+      "resetDesignHint": "Returns spacing, background, framing and filters to how they started. Your photos and text stay.",
       "newConfirm": "Start a new collage? Your current photos and text will be removed.",
       "newConfirmYes": "Start over",
       "saved": "Saved in this browser"
@@ -180,6 +182,7 @@
     "style": {
       "spacing": "Spacing",
       "padding": "Outer margin",
+      "linkPadding": "Margin same as spacing",
       "radius": "Rounded corners",
       "background": "Background",
       "solid": "Color",
