@@ -1,0 +1,18 @@
+{
+  "name": "simple-collage-promo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets": "node scripts/make-photos.mjs && node scripts/make-music.mjs",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Promo out/simple-collage-4x5.mp4",
+    "render:story": "remotion render src/index.ts PromoStory out/simple-collage-9x16.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.535",
+    "@remotion/google-fonts": "4.0.535",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.535"
+  }
+}
