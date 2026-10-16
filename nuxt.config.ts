@@ -22,6 +22,8 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    // Evita que Vite recargue la página al descubrir los íconos en desarrollo.
+    optimizeDeps: { include: ['lucide-vue-next'] },
   },
 
   app: {
